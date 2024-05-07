@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Madimi+One&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A0153E;
+}
+
+.content{
+    background-color: #C40C0C;
+    border-radius: 1px;
+    width: 960px;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.content::before{
+    position: absolute;
+    content: "";
+    background-color:#201658 ;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    color: #A0153E;
+    animation: slidein 1s forwards;
+}
+
+.first-content{
+    display: flex;
+    z-index: 9;
+}
+
+
+.first-colunn{
+    text-align: center;
+    width: 40%;
+}
+
+.tittle{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #FF8A08;
+}
+
+.icon-modify{
+    color: rgb(255, 0, 0);
+    padding: 0 10px;
+}
+
+.form{
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 35px;
+    border: none;
+    background-color: #edf2f4;
+}
+
+.label-input{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn {
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: #0C0C0C;
+    color: #C40C0C;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 35px 10px 0; /* Adjust margin to create separation */
+    border: none;
+    display: inline-block;
+}
+
+
+
+.btn:hover {
+    background-color: #C40C0C;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #F5E8DD;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #C40C0C;
+    color: #fff;;  
+}
+
+
+input[type="text"] {
+    /* Your styles here */
+    width: 400px; 
+    height: 40px; 
+    padding: 30px; 
+}
+
+input[type="password"]#senha {
+    /* Your styles here */
+    width: 400px; /* Example width */
+    height: 40px; /* Example height */
+    padding: 30px; /* Example padding */
+}
+
+
+.social-media {
+    width: 100%;
+    margin: 0 10px; /* Add margin to create separation */
+    height: auto;
+    max-width: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+/* Styles for the button container */
+.btn {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Styles for the primary button */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C40C0C; /* Change this to your desired color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+    background-color: #0C0C0C; /* Change this to a darker shade for hover effect */
+}
+
+
+
+@keyframes slidein{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
